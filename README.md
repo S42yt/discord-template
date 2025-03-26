@@ -65,16 +65,10 @@ Format:
 npm run pretty
 ```
 
-Linting:
-
-```bash
-npm run lint
-```
-
 Docker:
 
 ```bash
-docker-compose up
+docker-compose  -d
 ```
 
 ## Project Structure
