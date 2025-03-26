@@ -1,0 +1,13 @@
+services:
+  bot:
+    build:
+      context: .
+    container_name: discord-template
+    env_file:
+      - .docker.env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    command: ["npm", "run", "dev"]
